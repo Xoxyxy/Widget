@@ -1,0 +1,16 @@
+.button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: var(--black-color);
+  background-color: var(--accent-color);
+  backdrop-filter: blur(17px);
+  border-radius: 15px;
+  padding: 13px 24px;
+  max-width: 171px;
+  white-space: nowrap;
+
+  &:hover {
+    background-color: var(--accent-hover-color);
+  }
+}

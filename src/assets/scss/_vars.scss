@@ -1,9 +1,21 @@
 :root {
-  --font-family: "", sans-serif;
-  --content-width: 1200px;
+  --font-family: "Onest", sans-serif;
+  --content-width: 1140px;
   --container-offset: 15px;
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
+  @media (max-width: 680px) {
+    --content-width: 480px;
+  }
+
   // colors
   --light-color: #fff;
+  --light2-color: #e0e0e0;
+  --light3-color: #ffffffb0;
+  --black-color: #212121;
+  --grey-color: #757575;
+  --grey2-color: #999;
+  --accent-color: #ffdd2d;
+  --accent-hover-color: #fff500;
+  --bg-color: #f6f7f8;
 }
