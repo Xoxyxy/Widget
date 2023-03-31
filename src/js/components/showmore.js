@@ -56,7 +56,7 @@ const showMore = (containerEl, btnEl, classes) => {
             <div class="review__card-comment">
               ${comment}
             </div>
-            <a href="#" class="review__card-link">
+            <a href="https://www.avito.ru/user/e992656133c4c90e6080f448de406631/profile?id=2201271038" class="review__card-link" target="_blank">
               Отзыв Avito
             </a>
           </div>
