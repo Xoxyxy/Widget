@@ -1,22 +1,18 @@
-const widgetBtn = document?.querySelector('.widget')
-const widgetModal = document?.querySelector('.widget-modal')
-const widgetCloseBtn = document?.querySelector('.widget-modal__close')
+import './components/modal'
+import showMore from './components/showmore'
 
-if (widgetBtn && widgetModal) {
-  const widgetClose = () => {
-    widgetModal.classList.remove('widget-modal--active')
-  }
+showMore('[data-container="1"]', '[data-btn="1"]', {
+  cardClass: 'review__card',
+  cardTop: 'review__card-top',
+  cardLeft: 'review__card-left',
+  cardDate: 'review__card-date',
+  cardName: 'review__card-name'
+})
 
-  const widgetOpen = () => {
-    widgetModal.classList.add('widget-modal--active')
-  }
-
-  widgetModal.addEventListener('click', event => {
-    if (event.target && event.target.classList.contains('widget-modal')) {
-      widgetClose()
-    }
-  })
-
-  widgetBtn.addEventListener('click', widgetOpen)
-  widgetCloseBtn.addEventListener('click', widgetClose)
-}
+showMore('[data-container="2"]', '[data-btn="2"]', {
+  cardClass: 'widget-modal__card',
+  cardTop: 'review__card-top widget-modal__card-top',
+  cardLeft: 'review__card-left widget-modal__card-left',
+  cardDate: 'widget-modal__card-date',
+  cardName: 'widget-modal__card-name'
+})
